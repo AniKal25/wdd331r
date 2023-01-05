@@ -23,7 +23,7 @@ ul {
 }
 
 /* links */
-a,
+
 a:visited {
   color: var(--main-blue);
   text-decoration: none;
@@ -101,7 +101,9 @@ article img {
   width: 50%;
   margin: 0 auto;
 }
-
+hr {
+  color: #666;
+}
 
 
 @media only screen and (min-width: 900px) {
@@ -110,18 +112,19 @@ article img {
     display: flex;
     padding: .8rem 0;
     color: #666;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
   }
 
-  nav ul {
-    display: flex;
+  nav ul li {
+    display: inline-block;
     text-align: right;
   }
 
 
   body div {
     display: grid;
+    grid-template-columns: 1fr, 1fr;
   }
 
   div.post-date {
