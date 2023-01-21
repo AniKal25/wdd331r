@@ -1,159 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 /***************************** MOBILE SITE *****************************/
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  color: #333; 
-}
+  color: #333; }
 
 header {
   background-color: white;
   text-align: center;
   text-decoration: none;
-  padding: .5rem 2%;
-}
+  padding: 30px; }
 
 main {
-  width: 90%;
+  padding: 30px;
+  width: 95%;
   margin: 1.5rem auto;
-  display: block;
-}
+  display: block; }
 
-h1, h2{
-    font-family: 'Lora', serif;
-}
+h1, h2 {
+  font-family: "Lora", serif; }
 
-li, div, p{
-    font-family: Helvetica, Arial, sans-serif;
-}
+li, div, p {
+  font-family: Helvetica, Arial, sans-serif; }
 
-nav li{
-    padding: 5px 0;
-    text-align: center;
-}
-
-
-h1 a{
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
-
-h1{
-    list-style-type: none;
-    text-align: center;
-}
-
+nav li {
+  padding: 5px 0;
+  text-align: center; }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  border-bottom: .1px solid #666;
+  border-top: .1px solid #666; }
 nav a {
   display: block;
-  padding: .5rem 0;
+  padding: 30px;
   color: #666;
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Helvetica, Arial, sans-serif; }
+  nav a :active {
+    color: #DEB887; }
+  nav a :hover {
+    color: #00ddff; }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family:  Helvetica;
-}
-
-nav a:active{
-    color: #DEB887;
-}
-
-nav a:hover{
-  color: #00ddff;
-}
-
-article h2{
-    margin: 5px 0 30px 0;
-}
-
-article h2 a{
-    text-decoration: none;
-    color: #666;
-}
-
-article h2 a:active{
-    color: #DEB887;
-}
-
-article h2 a:hover{
-    color: #666;
-    text-decoration: none;
-}
-
-article h2 a:visited {
-  color: #666;
+h1, h1 a {
   text-decoration: none;
-}
+  text-align: center;
+  list-style-type: none;
+  color: black; }
 
-article{
-    padding: 20px;
-    background-color: white;
-    margin: 0 auto;
-}
+article {
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto; }
+  article .post-date {
+    color: black;
+    margin: 1rem auto;
+    text-align: right;
+    border-bottom: .1px solid #666; }
+  article h2 {
+    margin: 5px 0 30px 0; }
+    article h2 a {
+      text-decoration: none;
+      color: #666; }
+      article h2 a :active {
+        color: #DEB887; }
+      article h2 a :hover {
+        color: #666;
+        text-decoration: none; }
+      article h2 a :visited {
+        color: #666;
+        text-decoration: none; }
 
 article figure {
   margin: 0 auto;
-  text-align: center;
-}
+  text-align: center; }
 
-figure img{
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-    width: 80%;
-}
-article a{
-    color: #666;
-    text-decoration: none;
-}
-article a:active{
-    color: #DEB887
-}
-article a:hover{
-    text-decoration: underline;
-}
-.post-date {
-  color: black;
-  margin: 1rem auto;
-  text-align: right;
-}
+figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  width: 80%; }
 
 .post-content {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
+p a {
+  color: #6495ED;
+  text-decoration: none; }
+  p a :hover {
+    text-decoration: underline; }
+  p a :active {
+    color: #DEB887; }
 
-
-@media only screen and (min-width: 900px) {
-
-  nav a {
-    max-width: 64rem;
-    margin: auto;
-  }
-
-  nav ul li {
-    display: inline-block;
-    text-align: right;
-  }
-
-
-  body div {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-  }
-
-  div.post-date {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-}
-
+/*# sourceMappingURL=main.css.map */

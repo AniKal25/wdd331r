@@ -1,0 +1,37 @@
+body {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+form >p {
+    background-color: blue;
+}
+
+form p {
+    color: red;
+}
+
+span help {
+    text-transform: capitalize;
+}
+
+span.help {
+    color: green;
+}
+
+fieldset:not(:first-of-type) {
+    font-size: 20px;
+}
+
+[title*fieldset] {
+    font-style: italic;
+}
+
+label ~ input {
+    font-size: 20px;
+}
+
+fieldset input:invalid {
+    background-color: red;
+}
