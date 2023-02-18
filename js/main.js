@@ -36,8 +36,8 @@ const links = [
     },
 
     {
-      label: "Week 7",
-      url: "week7/index.html"
+      label: "Week 6 codepen",
+      url: "codepen/index.html"
       
     },
 
