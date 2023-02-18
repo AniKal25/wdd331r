@@ -13,7 +13,7 @@ const links = [
 
     {
       label: "Week 3",
-      url: "week3/index.html"
+      url: "week3/scss-demo.html"
       
     },
 
@@ -31,7 +31,7 @@ const links = [
 
     {
       label: "Week 6",
-      url: "week6/index.html"
+      url: "week6/index.html", 
       
     },
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container container-one">
+        <div class="orbiting-circle"></div></div>
+      <div class="container container-two">
+        <div class="morphing-circle"></div></div>
+      <div class="container container-three">
+        <div class="splitting-circle-right"></div><div class="splitting-circle-left"></div>
+      </div>
+      <div class="container container-four"><div class="beating-circle"></div>
+
+
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+}
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2CC8F;
+}
+.container-one {
+    padding: 1vmin;
+}
+          
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit {
+    0% { transform: translate(0,0); }
+    5% { transform:      translate(0,0); } /* don't change for 5% of the time...pause */
+   25% { transform: translate(300%,0%); } /* start moving again */
+   30% { transform: translate(300%,0%); } /* pause */
+   50% { transform: translate(300%,300%); } /* move */
+   55% { transform: translate(300%,300%); }
+   75% { transform: translate(0%,300%); }
+   80% { transform: translate(0%,300%); }
+   100% { transform: translate(0%,0%); }
+}
+
+.container-two {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+      
+.morphing-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: morphing-circle-square 3s linear infinite;	
+}
+
+@keyframes morphing-circle-square {
+    0% {border-radius: 50%}
+    25% { /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+       border-radius: 50%;
+       background-color: darkred;
+    }
+    50% { /* now change to white square...but don't start rotating yet! */
+       border-radius: 0%;
+       background-color: white;
+       transform: rotate(0deg);
+    }
+    75% { /* stay a white square, but rotate 90deg */
+       border-radius: 0%;
+       background-color: white;
+       transform: rotate(90deg);   
+    }
+    100% { /* stay rotated at 90, but change back to a circle */
+       border-radius: 50%;
+       background-color: darkred;
+       transform: rotate(90deg);
+    }
+}
+
+.container-three {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.splitting-circle-left {
+    height: 25%;
+    width: 12.5%;
+    background-color: darkred;
+    border-bottom-right-radius: 200% 100%;
+    border-top-right-radius: 200% 100%;
+    animation: splitleft 3s linear infinite;
+
+
+}
+.splitting-circle-right {
+    height: 25%;
+    width: 12.5%;
+    background-color:darkred;	
+    border-bottom-left-radius: 200% 100%;
+    border-top-left-radius: 200% 100%;
+    animation: splitright 3s linear infinite;
+}
+
+
+@keyframes splitleft {
+    0% { transform: translate(0,0); }
+    25% { transform: translate(0,0); }
+    40% { transform: translate(50%,0); }
+    80% { transform: translate(50%,0); }
+    100% { transform: translate(0,0); }
+}
+
+@keyframes splitright {
+    0% { transform: translate(0,0); }
+    25% { transform: translate(0,0); }
+    40% { transform: translate(-50%,0); }
+    80% { transform: translate(-50%,0); }
+    100% { transform: translate(0,0); }
+}
+
+.container-four {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.beating-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    animation: beat 3s linear infinite;
+}
+
+@keyframes beat{
+  15%{transform:scale(1);}
+  20%{transform:scale(1.3);}
+  23%{transform:scale(1);}
+  60%{transform:scale(1);}
+  62%{transform:scale(1.3);}
+  65%{transform:scale(1);}
+  70%{transform:scale(1.3);}
+  80%{transform:scale(1);}
+}
+
+    </style>
+</body>
+</html>
